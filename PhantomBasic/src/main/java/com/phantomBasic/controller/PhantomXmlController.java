@@ -6,7 +6,6 @@ package com.phantomBasic.controller;
 import com.google.inject.Inject;
 import com.phantomBasic.ext.PhantomController;
 import com.phantomBasic.service.PersonService;
-import com.phantomBasic.util.XmlUtil;
 
 /**
  * 
@@ -24,7 +23,7 @@ public class PhantomXmlController extends PhantomController {
 	 * 提供XML接口
 	 */
 	public void index() {
-		String xml = XmlUtil.objectToXml(service.getAllPersonList());
-		renderText(xml, contentType);
+//		String xml = XmlUtil.objectToXml(service.getAllPersonList());
+//		renderText(xml, contentType);
 	}
 }

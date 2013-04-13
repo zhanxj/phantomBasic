@@ -37,7 +37,7 @@ public class CommonConfig extends JFinalConfig{
 
 	@Override
 	public void configPlugin(Plugins plugins) {
-		C3p0Plugin cp = new C3p0Plugin("jdbc:mysql://localhost:3306/test","root","123@abc");
+		C3p0Plugin cp = new C3p0Plugin("jdbc:mysql://localhost:3306/test","root","root");
 		plugins.add(cp);
 		ActiveRecordPlugin activeRecordPlugin = new ActiveRecordPlugin(cp);
 		plugins.add(activeRecordPlugin);
